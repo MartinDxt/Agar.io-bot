@@ -12,10 +12,14 @@ var aposBotVersion = 3.551;
 //TODO: Team mode
 //      Detect when people are merging
 //      Split to catch smaller targets
+//      Split to escape being eaten in free of enmies direction
 //      Angle based cluster code
 //      Better wall code
 //      In team mode, make allies be obstacles.
-
+//      add a better pathfinding that goes around anemies and obstacles, just the tangent line to the obstacle if "path segment" intersects circle because it tends to go towards enemies in the pathway
+//      compute the distance in function of the path it would have to takeif above line so it avoids going around
+//      after cool down time, rejoin split pieces in to 1
+//      when you reach lot of blobs you can eat viruses giving you 100 mass each leader in 3 sec litterally
 Number.prototype.mod = function(n) {
     return ((this % n) + n) % n;
 };
